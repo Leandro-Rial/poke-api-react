@@ -1,0 +1,109 @@
+.pages {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1% 5%;
+
+  .functions {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+    .search {
+      margin: 10px 40px 10px 0;
+
+      .inputSearch {
+        width: 250px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background: #f6f6f7;
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .btn button {
+      border-style: none;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border-radius: 5px;
+      background: #30a7d7;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  }
+
+  .pokedex {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .pages {
+    .pokedex {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pages {
+    .functions {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      padding: 0;
+
+      .search {
+        margin: 10px  0;
+
+        .inputSearch {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          background: #f6f6f7;
+        }
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+      }
+
+      .btn button {
+        width: 100px;
+        border-style: none;
+        padding: 5px 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        background: #30a7d7;
+        color: #fff;
+        font-size: 1em;
+        cursor: pointer;
+      }
+    }
+
+    .pokedex {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
